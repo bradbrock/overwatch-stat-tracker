@@ -1,13 +1,12 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const [major, minor] = process.versions.node.split('.').map(parseFloat);
-if (major <= 7) {
-    console.log('Running from start.js!!');
-}
+// import environmental variables from our variables.env file
+require('dotenv').config({ path: 'variables.env' });
 
 // Start our app!
+console.log('Running from start.js!!!');
 const app = require('./app');
-app.set('port', process.env.PORT || 7777);
+app.set('port', process.env.PORT || 7775);
 const server = app.listen(app.get('port'), () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });
