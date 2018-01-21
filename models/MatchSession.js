@@ -6,4 +6,4 @@ const matchSessionSchema = new mongoose.Schema({
     mapName: String
 });
 
-module.exports = mongoose.model('matchSession', matchSessionSchema);
+module.exports = mongoose.model('MatchSession', matchSessionSchema);

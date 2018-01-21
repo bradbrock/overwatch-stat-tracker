@@ -1,18 +1,21 @@
 doctype html
 html
-    head
-        title= `${title} | ${siteName}`
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-    body
-        block header
-            header
-                h1 Here's the header.
-                nav
-                    a(href='/') navItem
-                    a(href='/') navItem
-                    a(href='/') navItem
-        block content
-            h2 This is the content.
-        block footer
-            footer
-                p Here's a footer.
+head
+  title= `${title} | ${siteName}`
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+body
+
+  block header
+    header
+      h1 Here's the header.
+      nav
+        a(href='/') navItem
+        a(href='/') navItem
+        a(href='/') navItem
+
+  block content
+    h2 This is the content.
+
+  block footer
+    footer
+      p Here's a footer.
