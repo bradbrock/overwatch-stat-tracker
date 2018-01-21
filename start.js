@@ -14,7 +14,6 @@ mongoose.connection.on('error', (err) => {
 require('./models/MatchSession');
 
 // Start our app!
-console.log('Running from start.js!!!');
 const app = require('./app');
 app.set('port', process.env.PORT);
 const server = app.listen(app.get('port'), () => {
