@@ -4,7 +4,6 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const path = require('path');
 const routes = require('./routes/index');
-const sass = require('node-sass');
 
 const app = express();
 
@@ -14,11 +13,5 @@ app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work gr
 
 // router
 app.use('/', routes);
-
-sass.render({
-  file: './scss/style.scss'
-}, function(err, result) {
-  console.log("Ran sass");
-});
 
 module.exports = app;
