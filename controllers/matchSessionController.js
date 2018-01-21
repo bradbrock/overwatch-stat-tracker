@@ -5,6 +5,6 @@ exports.homePage = (req, res) => {
     res.render('home');
 }
 
-exports.foo = (req, res) => {
-    res.render('foo');
+exports.record = (req, res) => {
+    res.render('record');
 }
