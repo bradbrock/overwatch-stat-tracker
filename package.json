@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon start.js",
-    "sass": "node-sass scss/style.scss css/style.css"
+    "sass": "node-sass scss/style.scss public/css/style.css"
   },
   "author": "",
   "license": "ISC",
