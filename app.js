@@ -11,16 +11,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views')); // this is the folder where we keep our pug files
 app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work great too
 
-// app.get('/', function (req, res) {
-//   res.send('bar');
-// });
-
-// router.get('/', (req, res) => {
-//   res.send('Hey it works!');
-// });
-
+// router
 app.use('/', routes);
 
-
 module.exports = app;
-// module.exports = router;
