@@ -3,12 +3,8 @@ html {
 
 .hero-select {
   display: flex;
-  flex-flow: row wrap; }
-  .hero-select button {
-    flex: 0 1 33.3333%;
-    padding: 1rem;
-    border-radius: 0;
-    -webkit-appearance: none; }
+  flex-flow: row wrap;
+  margin-bottom: 1rem; }
 
 .hero-select__button {
   padding: 1rem;
@@ -19,3 +15,8 @@ html {
   .hero-select__button label {
     display: inline-block;
     margin-right: .5rem; }
+
+button {
+  padding: .25rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-appearance: none; }

@@ -2,20 +2,30 @@ extends layout
 
 block content
 
-  form
-    div.hero-select
-      div.hero-select__button
-        label(for='ana') Ana
-        input(type='radio' name='hero-select' value='Ana' id='ana')
-      div.hero-select__button
-        label(for='bastion') Bastion
-        input(type='radio' name='hero-select' value='Bastion' id='bastion')
-      div.hero-select__button
-        label(for='dva') D.Va
-        input(type='radio' name='hero-select' value='D.Va' id='dva')
-      div.hero-select__button
-        label(for='doomfist') Doomfist
-        input(type='radio' name='hero-select' value='Doomfist' id='doomfist')
+  form(action="/record" method="POST" class="card")
+    label(for="name") Name
+    input(type="text" name="name" id="name")
+    input(type="submit" value="Save →" class="button")
+
+  //- form(action="/record" method="POST")
+  //-   .hero-select
+  //-     .hero-select__button
+  //-       label(for='ana') Ana
+  //-       input(type='radio' name='hero-select' value='Ana' id='ana')
+  //-     .hero-select__button
+  //-       label(for='bastion') Bastion
+  //-       input(type='radio' name='hero-select' value='Bastion' id='bastion')
+  //-     .hero-select__button
+  //-       label(for='dva') D.Va
+  //-       input(type='radio' name='hero-select' value='D.Va' id='dva')
+  //-     .hero-select__button
+  //-       label(for='doomfist') Doomfist
+  //-       input(type='radio' name='hero-select' value='Doomfist' id='doomfist')
+  //-     label(for='hero') Hero:
+  //-     input(type='text' name='hero')
+  //-   input(type='submit' value='save') 
+      
+
 
   //- .hero-select
   //-   button Ana
