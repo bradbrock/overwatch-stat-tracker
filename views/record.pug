@@ -1,15 +1,30 @@
 extends layout
 
 block content
+
   form
-    .hero-select
-      button Ana
-      button Bastion
-      button D.Va
-      button Doomfist
-      button Genji
-      button Hanzo
-      button Junkrat
-      button Lucio
-      button Mei
-      button Mei
+    div.hero-select
+      div.hero-select__button
+        label(for='ana') Ana
+        input(type='radio' name='hero-select' value='Ana' id='ana')
+      div.hero-select__button
+        label(for='bastion') Bastion
+        input(type='radio' name='hero-select' value='Bastion' id='bastion')
+      div.hero-select__button
+        label(for='dva') D.Va
+        input(type='radio' name='hero-select' value='D.Va' id='dva')
+      div.hero-select__button
+        label(for='doomfist') Doomfist
+        input(type='radio' name='hero-select' value='Doomfist' id='doomfist')
+
+  //- .hero-select
+  //-   button Ana
+  //-   button Bastion
+  //-   button D.Va
+  //-   button Doomfist
+  //-   button Genji
+  //-   button Hanzo
+  //-   button Junkrat
+  //-   button Lucio
+  //-   button Mei
+  //-   button Mei
