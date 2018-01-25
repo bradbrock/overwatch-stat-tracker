@@ -4,6 +4,6 @@ const matchSessionController = require('../controllers/matchSessionController');
 
 router.get('/', matchSessionController.homePage);
 router.get('/record', matchSessionController.record);
-router.post('/record', matchSessionController.record);
+router.post('/record', matchSessionController.save);
 
 module.exports = router;

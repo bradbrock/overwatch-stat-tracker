@@ -7,19 +7,14 @@ exports.homePage = (req, res) => {
 
 exports.record = (req, res) => {
     res.render('record');
+    console.log("record function");
 }
 
-exports.save = async (req, res) => {
-    const sessionData = new SessionData(req.body);
-    // save to mongoDB
-    await sessionData.save();
-
-    // console.log(req.body);
-    // res.json(req.body);
+exports.test = (req, res) => {
+    console.log("test function");
 }
 
-// exports.save = (req, res) => {
-//     const sessionData = new SessionData(req.body);
-//     // console.log(req.body);
-//     // res.json(req.body);
-// }
+exports.save = (req, res) => {
+    res.json(req.body);
+    console.log(req.body);
+}
