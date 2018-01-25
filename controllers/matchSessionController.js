@@ -17,3 +17,9 @@ exports.save = async (req, res) => {
     // console.log(req.body);
     // res.json(req.body);
 }
+
+// exports.save = (req, res) => {
+//     const sessionData = new SessionData(req.body);
+//     // console.log(req.body);
+//     // res.json(req.body);
+// }
